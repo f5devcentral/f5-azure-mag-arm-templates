@@ -68,7 +68,7 @@ Use the appropriate button below to deploy:
 
 - **BYOL** (bring your own license): This allows you to use an existing BIG-IP license.
 
-  [![Deploy to Azure Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png))](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fbyol%2FazureDeploy.json)
+  [![Deploy to Azure Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fbyol%2FazureDeploy.json)
 
 ---
 
