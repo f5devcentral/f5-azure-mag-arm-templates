@@ -1,8 +1,7 @@
 # Deploying the BIG-IP VE in Azure - ConfigSync Cluster (Active/Active): 3 NIC
 
-[![Slack Status](https://f5cloudsolutions.herokuapp.com/badge.svg)](https://f5cloudsolutions.herokuapp.com)
-[![Releases](https://img.shields.io/github/release/f5networks/f5-azure-arm-templates.svg)](https://github.com/f5networks/f5-azure-arm-templates/releases)
-[![Issues](https://img.shields.io/github/issues/f5networks/f5-azure-arm-templates.svg)](https://github.com/f5networks/f5-azure-arm-templates/issues)
+[![Releases](https://img.shields.io/github/release/Mikej81/f5-azure-mag-arm-templates.svg)](https://github.com/Mikej81/f5-azure-mag-arm-templates/releases)
+[![Issues](https://img.shields.io/github/issues/Mikej81/f5-azure-mag-arm-templates.svg)](https://github.com/Mikej81/f5-azure-mag-arm-templates/issues)
 
 ## Contents
 
@@ -28,8 +27,6 @@ When using all-protocol load balancing, you can configure the next hop on Azure 
 When using per-protocol load balancing, deploy a network virtual server on BIG-IP VE with a destination address that matches the secondary private IP addresses of the ILB load balancing rule's backend pool members.  Note: The all-protocol ILB is currently only available in preview; you must sign up through Microsoft to enable this functionality before deploying the template.
 
 The BIG-IP VEs have the [Local Traffic Manager (LTM)](https://f5.com/products/big-ip/local-traffic-manager-ltm) module enabled to provide advanced traffic management functionality. This means you can also configure the BIG-IP VE to enable F5's L4/L7 security features, access control, and intelligent traffic management.
-
-For diagrams of alternate deployment topologies, see [alternate topologies](../../alternate-deployment-topologies.md).
 
 For information on getting started using F5's ARM templates on GitHub, see [Microsoft Azure: Solutions 101](http://clouddocs.f5.com/cloud/public/v1/azure/Azure_solutions101.html).
 
