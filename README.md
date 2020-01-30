@@ -1,8 +1,5 @@
 # F5 Azure Government ARM Templates
 
-[![Releases](https://img.shields.io/github/release/Mikej81/f5-azure-mag-arm-templates.svg)](https://github.com/Mikej81/f5-azure-mag-arm-templates/releases)
-[![Issues](https://img.shields.io/github/issues/Mikej81/f5-azure-mag-arm-templates.svg)](https://github.com/Mikej81/f5-azure-mag-arm-templates/issues)
-
 ## Introduction
 
 Welcome to the GitHub repository for F5's ARM templates for Azure deployments.  All of the templates in this repository have been developed by F5 Networks engineers. All templates in this repository are *experimental*.

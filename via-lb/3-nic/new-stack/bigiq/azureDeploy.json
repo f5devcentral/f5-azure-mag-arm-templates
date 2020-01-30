@@ -453,11 +453,11 @@
 "intSubnetPrivateAddress3": "[concat(parameters('vnetAddressPrefix'), '.3.11')]",
 "internalLoadBalancerAddress": "[concat(parameters('vnetAddressPrefix'), '.3.50')]",
 "availabilitySetName": "[concat(variables('dnsLabel'), '-avset')]",
-"zoneMappings": "[replace(toLower(string(providers('Microsoft.Compute', 'virtualMachines').zoneMappings)), ' ', '')]",
+
 "southcentralus": "[equals(variables('location'), string('southcentralus'))]",
 "southafricanorth": "[equals(variables('location'), string('southafricanorth'))]",
 "australiaeast": "[equals(variables('location'), string('australiaeast'))]",
-"zonesAvailable": "[and(contains(variables('zoneMappings'), concat('\"', variables('location'), '\"')), not(variables('southcentralus')), not(variables('southafricanorth')), not(variables('australiaeast')))]",
+
 "availabilitySetId": {
 "id": "[resourceId('Microsoft.Compute/availabilitySets',variables('availabilitySetName'))]"
 },
@@ -1117,7 +1117,6 @@
 "PlatformFaultDomainCount": 2,
 "PlatformUpdateDomainCount": 2
 },
-"condition": "[not(variables('zonesAvailable'))]",
 "tags": "[if(empty(variables('tagValues')), json('null'), variables('tagValues'))]",
 "type": "Microsoft.Compute/availabilitySets"
 },
@@ -1168,7 +1167,7 @@
 "name": "[concat(variables('dnsLabel'), '-', variables('instanceName'), '0')]",
 "plan": "[if(variables('useCustomImage'), json('null'), variables('imagePlan'))]",
 "properties": {
-"availabilitySet": "[if(not(variables('zonesAvailable')), variables('availabilitySetId'), json('null'))]",
+"availabilitySet": "[variables('availabilitySetId')]",
 "diagnosticsProfile": {
 "bootDiagnostics": {
 "enabled": true,
@@ -1204,7 +1203,6 @@
 "storageProfile": "[if(variables('useCustomImage'), variables('storageProfileArray').customImage, variables('storageProfileArray').platformImage)]"
 },
 "tags": "[if(empty(variables('tagValues')), json('null'), variables('tagValues'))]",
-"zones": "[if(variables('zonesAvailable'), array(1), json('null'))]",
 "type": "Microsoft.Compute/virtualMachines"
 },
 {
@@ -1221,7 +1219,7 @@
 "name": "[concat(variables('dnsLabel'), '-', variables('instanceName'), '1')]",
 "plan": "[if(variables('useCustomImage'), json('null'), variables('imagePlan'))]",
 "properties": {
-"availabilitySet": "[if(not(variables('zonesAvailable')), variables('availabilitySetId'), json('null'))]",
+"availabilitySet": "[variables('availabilitySetId')]",
 "diagnosticsProfile": {
 "bootDiagnostics": {
 "enabled": true,
@@ -1257,7 +1255,6 @@
 "storageProfile": "[if(variables('useCustomImage'), variables('storageProfileArray').customImage, variables('storageProfileArray').platformImage)]"
 },
 "tags": "[if(empty(variables('tagValues')), json('null'), variables('tagValues'))]",
-"zones": "[if(variables('zonesAvailable'), array(2), json('null'))]",
 "type": "Microsoft.Compute/virtualMachines"
 },
 {

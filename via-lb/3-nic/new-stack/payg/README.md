@@ -1,9 +1,5 @@
 # Deploying the BIG-IP VE in Azure - ConfigSync Cluster (Active/Active): 3 NIC
 
-[![Slack Status](https://f5cloudsolutions.herokuapp.com/badge.svg)](https://f5cloudsolutions.herokuapp.com)
-[![Releases](https://img.shields.io/github/release/f5networks/f5-azure-arm-templates.svg)](https://github.com/f5networks/f5-azure-arm-templates/releases)
-[![Issues](https://img.shields.io/github/issues/f5networks/f5-azure-arm-templates.svg)](https://github.com/f5networks/f5-azure-arm-templates/issues)
-
 ## Contents
 
 - [Introduction](#introduction)
@@ -112,7 +108,7 @@ Use the appropriate button below to deploy:
 
 - **PAYG**: This allows you to use pay-as-you-go hourly billing.
 
-  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FF5Networks%2Ff5-azure-arm-templates%2Fv7.2.0.0%2Fsupported%2Ffailover%2Fsame-net%2Fvia-lb%2F3nic%2Fnew-stack%2Fpayg%2Fazuredeploy.json)
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fpayg%2FazureDeploy.json%3Ftoken%3DADKEFC43KXLUG3N6X24JDXK6GMCHM)
 
 ### Template parameters
 
