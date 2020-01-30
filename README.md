@@ -52,6 +52,23 @@ For each template, you have different options for licensing your BIG-IP VE(s).  
 
   - **BIG-IQ** <br>[BIG-IQ](https://f5.com/products/big-iq-centralized-management) licensing templates use an existing BIG-IQ device with a License pool of BIG-IP VE BYOL licenses.  You must have a BIG-IQ and a pool of BIG-IP VE BYOL license to use these templates.
 
+## Installation
+
+### Azure deploy buttons
+
+Use the appropriate button below to deploy:
+
+- **BIGIQ**: This allows you to launch the template using an existing BIG-IQ device with a pool of licenses to license the BIG-IP VE(s).
+
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fbigiq%2FazureDeploy.json)
+
+- **PAYG**: This allows you to use pay-as-you-go hourly billing.
+
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fpayg%2FazureDeploy.json)  
+
+- **BYOL** (bring your own license): This allows you to use an existing BIG-IP license.
+
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fbyol%2FazureDeploy.json)
 
 ---
 

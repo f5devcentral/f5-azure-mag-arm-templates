@@ -102,11 +102,7 @@ We encourage you to use our [Slack channel](https://f5cloudsolutions.herokuapp.c
 
 ## Installation
 
-You have three options for deploying this solution:
-
 - Using the Azure deploy buttons
-- Using [PowerShell](#powershell-script-example)
-- Using [CLI Tools](#azure-cli-10-script-example)
 
 ### Azure deploy buttons
 
@@ -114,7 +110,7 @@ Use the appropriate button below to deploy:
 
 - **BYOL** (bring your own license): This allows you to use an existing BIG-IP license.
 
-  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FF5Networks%2Ff5-azure-arm-templates%2Fv7.2.0.0%2Fsupported%2Ffailover%2Fsame-net%2Fvia-lb%2F3nic%2Fnew-stack%2Fbyol%2Fazuredeploy.json)
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fbyol%2FazureDeploy.json)
 
 ### Template parameters
 

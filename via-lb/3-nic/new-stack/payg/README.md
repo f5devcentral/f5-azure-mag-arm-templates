@@ -99,8 +99,6 @@ We encourage you to use our [Slack channel](https://f5cloudsolutions.herokuapp.c
 You have three options for deploying this solution:
 
 - Using the Azure deploy buttons
-- Using [PowerShell](#powershell-script-example)
-- Using [CLI Tools](#azure-cli-10-script-example)
 
 ### Azure deploy buttons
 
@@ -108,7 +106,7 @@ Use the appropriate button below to deploy:
 
 - **PAYG**: This allows you to use pay-as-you-go hourly billing.
 
-  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fpayg%2FazureDeploy.json%3Ftoken%3DADKEFC43KXLUG3N6X24JDXK6GMCHM)
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMikej81%2Ff5-azure-mag-arm-templates%2Fmaster%2Fvia-lb%2F3-nic%2Fnew-stack%2Fpayg%2FazureDeploy.json)
 
 ### Template parameters
 
