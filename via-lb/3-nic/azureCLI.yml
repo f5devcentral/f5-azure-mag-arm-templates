@@ -1,0 +1,9 @@
+- task: Deploy
+  displayName: Azure CLI
+  inputs:
+    azureSubscription: <Name of the Azure subscription>
+    scriptType: ps
+    scriptLocation: inlineScript
+    inlineScript: |
+        az --version
+        az account show

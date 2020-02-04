@@ -1,0 +1,4 @@
+image: "mcr.microsoft.com/azure-cli" 
+
+before_script:
+  - az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
